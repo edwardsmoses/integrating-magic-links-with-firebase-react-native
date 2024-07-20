@@ -38,7 +38,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactnative_firebase_magiclink_app/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactnative_firebase_magiclink_app/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = reactnative_firebase_magiclink_app/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		187D44E1EF7D33538B4735B1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = reactnative_firebase_magiclink_app/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		187D44E1EF7D33538B4735B1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = reactnative_firebase_magiclink_app/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-reactnative_firebase_magiclink_app-reactnative_firebase_magiclink_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactnative_firebase_magiclink_app-reactnative_firebase_magiclink_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-reactnative_firebase_magiclink_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactnative_firebase_magiclink_app.debug.xcconfig"; path = "Target Support Files/Pods-reactnative_firebase_magiclink_app/Pods-reactnative_firebase_magiclink_app.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-reactnative_firebase_magiclink_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactnative_firebase_magiclink_app.release.xcconfig"; path = "Target Support Files/Pods-reactnative_firebase_magiclink_app/Pods-reactnative_firebase_magiclink_app.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +46,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-reactnative_firebase_magiclink_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactnative_firebase_magiclink_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = reactnative_firebase_magiclink_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-reactnative_firebase_magiclink_app-reactnative_firebase_magiclink_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactnative_firebase_magiclink_app-reactnative_firebase_magiclink_appTests.release.xcconfig"; path = "Target Support Files/Pods-reactnative_firebase_magiclink_app-reactnative_firebase_magiclink_appTests/Pods-reactnative_firebase_magiclink_app-reactnative_firebase_magiclink_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AD44D922C4BF1960024D2BC /* reactnative_firebase_magiclink_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = reactnative_firebase_magiclink_app.entitlements; path = reactnative_firebase_magiclink_app/reactnative_firebase_magiclink_app.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -89,6 +90,7 @@
 		13B07FAE1A68108700A75B9A /* reactnative_firebase_magiclink_app */ = {
 			isa = PBXGroup;
 			children = (
+				9AD44D922C4BF1960024D2BC /* reactnative_firebase_magiclink_app.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -471,7 +473,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = reactnative_firebase_magiclink_app/reactnative_firebase_magiclink_app.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BH36LM37B;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = reactnative_firebase_magiclink_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,7 +502,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = reactnative_firebase_magiclink_app/reactnative_firebase_magiclink_app.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BH36LM37B;
 				INFOPLIST_FILE = reactnative_firebase_magiclink_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,10 +596,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -665,10 +668,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
